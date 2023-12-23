@@ -23,7 +23,7 @@ class WeatherController extends Controller
 
             // Check if the API request was successful
             if ($response->successful()) {
-                return view('weather.index', compact('weatherData'));
+                return view('weather.index', compact('weatherData','city'));
             } else {
                 return view('weather.index')->with('error', 'Unable to fetch weather data. Please try again.');
             }

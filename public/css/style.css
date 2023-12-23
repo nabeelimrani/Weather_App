@@ -16,6 +16,7 @@
 
 .city-name {
     color: rgba(0, 0, 255, 0.719);
+    font-size: 48px;
 }
 ::placeholder {
     color: #6c757d; /* Placeholder text color */
@@ -50,20 +51,6 @@ input:focus::placeholder {
     margin-top: 20px;
 }
 
-/* For the temperature container */
-.temp-container {
-    display: flex;
-    align-items: center;
-}
-
-.temp {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.after-temp {
-    font-size: 16px;
-}
 
 /* For the details container */
 .details-container {
