@@ -31,6 +31,46 @@
             border: 1px solid #ddd;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .temp-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .temp {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .after-temp {
+            font-size: 16px;
+        }
+
+        .real-feel {
+            font-size: 14px;
+        }
+
+        .details-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .detail {
+            text-align: center;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .value {
+            font-size: 16px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -61,21 +101,34 @@
                         <p class="card-text">Temperature: {{ $weatherData['main']['temp'] }} °C</p>
                         <p class="card-text">Weather: {{ $weatherData['weather'][0]['description'] }}</p>
 
-                        @php
-                            $iconClass = 'fas fa-sun'; // Default icon
-                            $weatherCode = $weatherData['weather'][0]['id'];
+                        <div class="temp-container">
+                            <div class="temp">{{ $weatherData['main']['temp'] }}°<span class="after-temp">C</span>
+                            </div>
+                            <div class="real-feel">
+                                RealFeel® 19°
+                            </div>
+                        </div>
 
-                            // Map weather codes to FontAwesome icons
-                            // ... (same as in your previous code)
-
-                        @endphp
-
-                        <i class="{{ $iconClass }} fa-3x mt-2"></i>
+                        <div class="details-container">
+                            <div class="detail">
+                                <span class="label">Air Quality</span>
+                                <span class="value" style="color: #E9365A">Unhealthy</span>
+                            </div>
+                            <div class="detail">
+                                <span class="label">Wind</span>
+                                <span class="value">SSE 8 km/h</span>
+                            </div>
+                            <div class="detail">
+                                <span class="label">Wind Gusts</span>
+                                <span class="value">9 km/h</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         @endif
     </div>
+
 
     <script src="{{ asset('fontawesome/js/all.min.js') }}"></script>
     <script src="{{ asset('bootstrap/bootstrap.min.js') }}"></script>
