@@ -1,0 +1,87 @@
+/* styles.css */
+
+
+.container {
+    margin-top: 50px;
+}
+
+.weather-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.city-name {
+    color: rgba(0, 0, 255, 0.719);
+}
+::placeholder {
+    color: #6c757d; /* Placeholder text color */
+    opacity: 0.7; /* Placeholder text opacity */
+    font-style: italic; /* Placeholder text style */
+}
+
+/* Style for the focused input */
+input:focus::placeholder {
+    opacity: 0.5; /* Adjust the opacity when input is focused */
+}
+
+/* Style for the search button */
+.btn-primary {
+    background-color: #007bff; /* Button background color */
+    border-color: #007bff; /* Button border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Adjust the background color on hover */
+    border-color: #0056b3; /* Adjust the border color on hover */
+}
+/* Add this to your existing CSS file or create a new one */
+
+/* For the weather card */
+.card.weather-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* For the temperature container */
+.temp-container {
+    display: flex;
+    align-items: center;
+}
+
+.temp {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.after-temp {
+    font-size: 16px;
+}
+
+/* For the details container */
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.detail {
+    text-align: center;
+}
+
+.label {
+    font-size: 14px;
+    color: #888;
+}
+
+.value {
+    font-size: 16px;
+    font-weight: bold;
+}

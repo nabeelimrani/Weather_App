@@ -17,7 +17,6 @@ class WeatherController extends Controller
                 'q' => $city,
                 'appid' => $apiKey,
                 'units' => 'metric',
-                'cnt' =>
             ]);
 
             $weatherData = $response->json();
