@@ -9,7 +9,7 @@ class WeatherController extends Controller
 {
     public function index(Request $request)
     {
-        $apiKey = 'a6869d283bdea882a278da327b007fb3';
+        $apiKey =  $apiKey = config('services.openweathermap.key');
         $city = $request->city;
 
         try {
@@ -17,6 +17,7 @@ class WeatherController extends Controller
                 'q' => $city,
                 'appid' => $apiKey,
                 'units' => 'metric',
+                'cnt' =>
             ]);
 
             $weatherData = $response->json();
