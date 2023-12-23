@@ -11,6 +11,9 @@
         body {
             background: url('image/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg') no-repeat center center fixed;
             background-size: cover;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background 0.5s ease-in-out;
         }
 
         .container {
@@ -32,7 +35,7 @@
         }
 
         .city-name {
-            color: rgba(0, 0, 255, 0.719);
+            color: rgba(0, 0, 255, 0.8);
             font-size: 45px;
             transition: color 0.3s ease-in-out;
         }
@@ -99,6 +102,21 @@
 
         .value:hover {
             color: #0056b3;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0059ff;
+            margin-bottom: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1 i {
+            color: #FFD700;
+        }
+
+        h1:hover {
+            color: #007bff;
         }
     </style>
 
