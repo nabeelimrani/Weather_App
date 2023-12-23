@@ -9,9 +9,10 @@
     <style>
         /* Your custom styles here */
         body {
-            background-color: #f8f9fa;
-            /* Light grey background color */
+            background: url('{{ asset('image/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
         }
+
 
         .container {
             margin-top: 50px;
