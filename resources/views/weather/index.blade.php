@@ -3,12 +3,9 @@
 
 <head>
     <title>Weather App</title>
-    <!-- Include Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Include Font Awesome CSS via CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha384-VoUJINyvpqW5LWfBTOuNhGn58ylBOn0l7LFvlxdA/W5gFcEn5gtqiX5dAyJ3ZdjI" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap/bootstrap.min.css') }}">
     <style>
         /* Your custom styles here */
         body {
@@ -79,10 +76,9 @@
         @endif
     </div>
 
-    <!-- Include Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ asset('fontawesome/js/all.min.js') }}"></script>
+    <script src="{{ asset('bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('jQuery/jquery.min.js') }}"></script>
 
     <!-- Add your custom JavaScript for animations here -->
 
